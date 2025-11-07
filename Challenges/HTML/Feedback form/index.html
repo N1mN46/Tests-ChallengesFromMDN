@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms challenge</title>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <h1>We want your feedback!</h1>
+
+    <p>We're very excited that you visited the <a href="#">little house in the woods</a>,
+    and we want to hear what you thought of it! Please fill in the below
+    sections. You don't need to provide your name or contact details, but
+    if you do, we'll enter you into a <a href="#">prize draw</a> where you'll have a chance
+    to win prizes.</p>
+
+    <form>
+       <div class="form-sections">
+        <h2>Facilities</h2>
+
+        <fieldset>
+        <legend>Was the porridge</legend>
+          <input type="radio" name="porridge" id="porridge1" value="hot" checked>
+            <label for="porridge1">Too hot?</label>
+          <input type="radio" name="porridge" id="porridge2" value="cold">
+            <label for="porridge2">Too cold?</label>
+          <input type="radio" name="porridge3" id="porridge3" value="right">
+            <label for="porridge3">Just right?</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Were the beds</legend>
+          <input type="radio" name="beds" id="beds1" value="hard" checked>
+            <label for="beds1"> Too hard?</label>
+          <input type="radio" name="beds" id="beds2" value="soft">
+            <label for="beds2">Too soft?</label>
+          <input type="radio" name="beds" id="beds3" value="right">
+            <label for="beds3">Just right?</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Describe the chairs (select all you agree with)</legend>
+          <input type="checkbox" name="chairs" id="chairs1">
+            <label for="chairs1">Comfy</label>
+          <input type="checkbox" name="chairs" id="chairs2">
+            <label for="chairs2">Luxurious</label>
+          <input type="checkbox" name="chairs" id="chairs3">
+            <label for="chairs3">Hi tec</label>
+          <input type="checkbox" name="chairs" id="chairs4">
+            <label for="chairs4">Pretty</label>
+          <input type="checkbox" name="chairs" id="chairs5">
+            <label for="chairs5">Majestic</label>
+      </fieldset>
+      </div>
+
+      <div class="form-sections">
+        <h2>About your hosts</h2>
+
+        <div class="separator">
+          <label for="bear">Who's your favorite bear?</label>
+           <select name="bear" id="bear">
+            <option value="bear1">Papa bear</option>
+            <option value="bear2">Mama bear</option>
+            <option value="bear3">Junior</option>
+            <option value="bear4">Dozer</option>
+          </select>
+        </div>
+
+        <div class="separator">
+         <label for="greeting">Which greeting did you prefer?</label>
+            <select name="greeting" id="greeting">
+              <option value="greeting1">Wave</option>
+              <option value="greeting2">Friendly greeting</option>
+              <option value="greeting3">Growl</option>
+              <option value="greeting4">Claw marks in the door</option>
+            </select>
+        </div>
+      </div>
+
+      <div class="form-sections">
+        <h2>Any other feedback?</h2>  
+        <label for="comment">Give us your comments</label>
+        <br>
+        <textarea name="comment" id="comment"></textarea>
+      </div>
+
+      <div class="form-sections">
+        <h2>Your details</h2>
+
+        <div class="separator">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+
+        <div class="separator">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+
+        <div class="separator">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone">
+        </div>
+    </div>
+
+    <div class="form-sections">
+        <button type="submit">Submit</button>
+     </div>
+
+    </form>
+  </body>
+</html>
