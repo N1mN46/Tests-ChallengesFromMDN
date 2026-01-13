@@ -1,0 +1,20 @@
+body {
+  font: 1.2em / 1.5 sans-serif;
+}
+.my-form {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.my-form input[type="search"],
+.my-form input[type="submit"] {
+  font-size: inherit;
+  padding: 10px;
+}
+
+.my-form input[type="submit"] {
+  background: rebeccapurple;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}

@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(189, 154, 154);
+  color: #333333;
+  font:
+    1em / 1.4 "Helvetica Neue",
+    "Helvetica",
+    "Arial",
+    sans-serif;
+  padding: 1em;
+  margin: 0;
+  width: 31.25em;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  height: 2em;
+  border: 2px solid #f7e7e7;
+  border-radius: 3px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3125em;
+}
+
+label {
+  flex: 0 50%;
+  text-align: right;
+  margin-right: .62em;
+}
+
+select {
+  padding: .3125em;
+}
+
+button {
+  margin: 0 auto;
+  padding: .3125em 1.3em;
+  background: #cebebe;
+}
+
+button:hover,
+button:focus {
+  background: #d1b3b3;
+}
+
+
+
+
