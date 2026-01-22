@@ -1,0 +1,159 @@
+/* General setup */
+@font-face {
+    font-family: "PT Serif", serif;
+    src: url(fonts/PTSerif-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Serif", serif;
+    src: url(fonts/PTSerif-BoldItalic.ttf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PT Serif", serif;
+    src: url(fonts/PTSerif-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PT Serif", serif;
+    src: url(fonts/PTSerif-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --font-pt-serif: "PT Serif", serif;
+    --light-red: #aa6666;
+    --dark-red: #661d1d;
+    --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  min-width: 61.25rem;
+  max-width: 87.75rem;
+  font-family: var(--font-pt-serif);
+}
+
+/* Layout */
+
+main {
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr;
+  gap: 2.5rem;
+  padding: 1.25rem 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+section h2 + p {
+    text-indent: 2rem;
+} 
+
+p, 
+li {
+    line-height: 1.5rem;
+    letter-spacing: .03rem;
+}
+
+a {
+    outline: none;
+}
+
+a[href^="http"]::after {
+    content: "";
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.25em;
+    background-size: 100%;
+    background-image: url("external-link-52.png");
+}
+
+a:link,
+a:visited {
+    color: var(--light-red);
+}
+
+
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: var(--dark-red);
+}
+
+ul,
+ol {
+    margin-block: 1rem;
+}
+
+ul {
+    list-style-type: square;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    margin-block-end: 1.5rem;
+}
+
+nav li a {
+    display: inline-block;
+    font-size: 1.4rem;
+    text-decoration: none;
+    width: 100%;
+    line-height: 5rem;
+    text-align: center;
+    border: 1px solid var(--light-red);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav li a:focus,
+nav li a:hover {
+    background-color: var(--light-red);
+    color: var(--white);
+}
+
+nav li a:active {
+    border-color: var(--dark-red);
+    background-color: var(--dark-red);
+}
+
+/* header and footer */
+
+header {
+  border-bottom: 5px solid var(--light-red);
+}
+
+footer {
+  border-top: 5px solid var(--light-red);
+}
+
+footer p {
+  text-align: center;
+}
+
