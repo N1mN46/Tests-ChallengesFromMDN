@@ -1,0 +1,40 @@
+@media screen and (width>= 37.5rem) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header a {
+        border: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        gap: 1rem;
+    }
+
+    p {
+       max-width: calc(1rem + 70vw);
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .cards li {
+        max-width: 18rem;
+    }
+
+    .sidebar {
+        margin-block-start: 1rem;
+    }
+}
